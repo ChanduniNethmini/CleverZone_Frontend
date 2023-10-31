@@ -232,7 +232,7 @@ export default class DashBoard extends React.Component {
                   fontWeight: "bold",
                 }}
               >
-                Scan now!
+                Chat now!
               </Text>
             </View>
           </TouchableOpacity>
