@@ -1,3 +1,3 @@
-var LocalIP = "192.168.1.106";
+var LocalIP = "172.28.8.155";
 
-export default LocalIP;
+    export default LocalIP;

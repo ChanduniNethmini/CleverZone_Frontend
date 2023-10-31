@@ -5,6 +5,7 @@ import HomeStack from './stacks/homeStack';
 import Ionicons from 'react-native-vector-icons/Ionicons'; // Import an icon library
 import ChatNew from '../components/ChatNew';
 import Chat from '../components/Chat';
+import Login from '../components/Login';
 
 const Tab = createBottomTabNavigator();
 
@@ -48,23 +49,26 @@ const Tabs = () => {
           headerShown: false,
         }}
       />
+
       <Tab.Screen
-        name={stackNames.LOGOUT}
-        component={HomeStack}
-        options={{
-          headerShown: false,
-        }}
-      />
-            <Tab.Screen
         name={stackNames.CHATBOT}
         component={Chat}
         options={{
           headerShown: false,
         }}
       />
-            <Tab.Screen
+
+      <Tab.Screen
         name={stackNames.SETTINGS}
         component={HomeStack}
+        options={{
+          headerShown: false,
+        }}
+      />
+
+      <Tab.Screen
+        name={stackNames.LOGOUT}
+        component={Login}
         options={{
           headerShown: false,
         }}
